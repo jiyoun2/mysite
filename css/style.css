@@ -1,53 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+/* mobile */
 #container {
-    width: 1000px;
+  width: 100%;
 }
+/* header */
 header {
-    width: 100%;
-    height: 80px;
-    background-color: #006699;
-}
-header #logo {
-    width: 30%;
-    float: left;
-    line-height: 80px; /* 부모요소의 height랑 똑같이 주면 세로 가운데 정렬됨*/
-}
-header #logo h1 {
-    color: greenyellow;
-    padding-left: 20px;
+  height: 320px;
 }
 header nav {
-    width: 70%;
-    float: right;
+  height: 60px;
+  background-color: black;
 }
-header nav ul {
-    list-style: none;
-    text-align: center;
+nav #main-nav {
+  text-align: center;
 }
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 16px;
+nav #main-nav li {
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 20px;
 }
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+#main-nav li a {
+  color: #fff;
+  text-decoration: none;
 }
-nav ul li a:hover {
-    color: yellowgreen;
+#main-pic img {
+  width: 100%;
+  height: 260px;
 }
 
+/* section */
 section {
-    width: 100%;
-    height: 600px;
-    background: url(../images/european-shorthair-8267220_1280.jpg) no-repeat center;
-    background-size: cover;
+  height: 320px;
+  padding: 10px 5%;
 }
-section h1 {
-    padding: 60px 0 0 100px;
-    color: #fff;
-    font-size: 3em;
+section .page-title {
+  margin: 20px 0;
+}
+section p {
+  line-height: 2.5;
+}
+section .content .photo {
+  display: none;
+}
+
+/* 태블릿 */
+@media screen and (min-width: 780px) {
+  #container {
+    width: 780px;
+    margin: 0 auto;
+  }
+  header { height: 360px; }
+  #main-pic img { height: 300px; }
+  section {height: 400px; padding: 20px 5%;}
+  section .content .photo {
+    display: block;
+    float: right;
+    width: 40%;
+  }
+  section .content .text {
+    width: 55%;
+    float: left;
+  }
 }

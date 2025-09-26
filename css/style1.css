@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 1000px;
+}
+header {
+    width: screen;
+    height: 80px;
+    background-color: #006699;
+}
+header #logo {
+    width: 30%;
+    float: left;
+    line-height: 80px; /* 부모요소의 height랑 똑같이 주면 세로 가운데 정렬됨*/
+}
+header #logo h1 {
+    color: greenyellow;
+    padding-left: 20px;
+}
+header nav {
+    width: 70%;
+    float: right;
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 16px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: yellowgreen;
+}
+
+section {
+    width: 100%;
+    height: 600px;
+    background: url(../images/european-shorthair-8267220_1280.jpg) no-repeat center;
+    background-size: cover;
+}
+section h1 {
+    padding: 60px 0 0 100px;
+    color: #fff;
+    font-size: 3em;
+}
