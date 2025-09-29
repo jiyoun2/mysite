@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My site</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div id="container">
-        <header>
-            <!-- Upper bar -->
-            <nav>
-                <ul id="main-nav">
-                    <li><a href="#intro">カフェ紹介</a></li>
-                    <li><a href="#choice">今日のおすすめ</a></li>
-                    <li><a href="#map">アクセス</a></li>
-                </ul>
-            </nav>
-            <!-- background -->
-            <div id="main-pic">
-                <img src="images/header1.jpg" alt="background">
+      <header>
+        <!-- Upper bar -->
+        <nav>
+          <ul id="main-nav">
+            <!-- 책갈피 기능 -->
+            <li><a href="#intro">カフェ紹介</a></li>
+            <li><a href="#choice">今月のおすすめ</a></li>
+            <li><a href="#map">アクセス</a></li>
+          </ul>
+        </nav>
+        <!-- background -->
+        <div id="main-pic">
+          <img src="images/header1.jpg" alt="background" />
+        </div>
+      </header>
+      <main id="main">
+        <section id="intro">
+          <div id="page-title">
+            <h1>カフェ紹介</h1>
+          </div>
+          <div class="content">
+            <!-- photo -->
+            <div class="photo">
+              <img src="images/cup-1.jpg" alt="coffee cup" />
             </div>
-        </header>
-        <main id="main">
-            <section id="intro">
-                <div id="page-title">
-                    <h1>カフェ紹介</h1>
-                </div>
-                <div class="content">
-                    <!-- photo -->
-                     <div class="photo">
-                        <img src="images/cup-1.jpg" alt="coffee cup">
-                     </div>
-                     <!-- text -->
-                     <p>営業時間:午前９時〜午後９時</p>
-                     <p>定休日：毎週月曜日<br>
-                        <i><small>(月曜日が祝日の場合、営業します。次の日休み)</small></i>
-                     </p>
+            <!-- text -->
+            <p>営業時間:午前９時〜午後９時</p>
+            <p>
+              定休日：毎週月曜日<br />
+              <i><small>(月曜日が祝日の場合、営業します。次の日休み)</small></i>
+            </p>
 
-                </div>
-            </section>
-        </main>
+            <p id="show"></p>
+          </div>
+        </section>
+        <section id="choice">
+          <div class="page-title">
+            <h1>今月のおすすめ</h1>
+          </div>
+          <div class="content">
+            <div class="photo">
+              <img src="images/cup-2.jpg" alt="커피잔" />
+            </div>
+            <div class="text">
+              <h2>* ハンドードリップアイスコーヒー *</h2>
+              <ol>
+                <li>
+                  1인분 기준으로 서버에 각얼음 5조각(한 조각의 20cc) 넣고 추출을
+                  시작한다.
+                </li>
+                <li>
+                  평상시 보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서
+                  200cc까지 내린다.
+                </li>
+                <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section id="map">
+          <div class="page-title">
+            <h1>アクセス</h1>
+          </div>
+          <div class="content">
+            <div class="photo">
+              <img src="images/map.png" alt="커피잔" />
+            </div>
+            <div class="text">
+              <p>서울시 금천구 가산 디지털2로 123</p>
+              <p>7호선 가산디지털단지역 8번 출구</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul id="bottom-menu">
+          <li><a href="#">カフェ紹介</a></li>
+          <li><a href="#">個人情報</a></li>
+          <li><a href="#">利用</a></li>
+          <li><a href="#">マップ</a></li>
+        </ul>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
