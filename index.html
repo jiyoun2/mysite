@@ -3,93 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My site</title>
+    <title>My Profile</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="container">
-      <header>
-        <!-- Upper bar -->
-        <nav>
-          <ul id="main-nav">
-            <!-- 책갈피 기능 -->
-            <li><a href="#intro">カフェ紹介</a></li>
-            <li><a href="#choice">今月のおすすめ</a></li>
-            <li><a href="#map">アクセス</a></li>
-          </ul>
-        </nav>
-        <!-- background -->
-        <div id="main-pic">
-          <img src="images/header1.jpg" alt="background" />
-        </div>
-      </header>
-      <main id="main">
-        <section id="intro">
-          <div id="page-title">
-            <h1>カフェ紹介</h1>
-          </div>
-          <div class="content">
-            <!-- photo -->
-            <div class="photo">
-              <img src="images/cup-1.jpg" alt="coffee cup" />
-            </div>
-            <!-- text -->
-            <p>営業時間:午前９時〜午後９時</p>
-            <p>
-              定休日：毎週月曜日<br />
-              <i><small>(月曜日が祝日の場合、営業します。次の日休み)</small></i>
-            </p>
-
-            <p id="show"></p>
-          </div>
-        </section>
-        <section id="choice">
-          <div class="page-title">
-            <h1>今月のおすすめ</h1>
-          </div>
-          <div class="content">
-            <div class="photo">
-              <img src="images/cup-2.jpg" alt="커피잔" />
-            </div>
-            <div class="text">
-              <h2>* ハンドードリップアイスコーヒー *</h2>
-              <ol>
-                <li>
-                  1인분 기준으로 서버에 각얼음 5조각(한 조각의 20cc) 넣고 추출을
-                  시작한다.
-                </li>
-                <li>
-                  평상시 보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서
-                  200cc까지 내린다.
-                </li>
-                <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
-              </ol>
-            </div>
-          </div>
-        </section>
-        <section id="map">
-          <div class="page-title">
-            <h1>アクセス</h1>
-          </div>
-          <div class="content">
-            <div class="photo">
-              <img src="images/map.png" alt="커피잔" />
-            </div>
-            <div class="text">
-              <p>서울시 금천구 가산 디지털2로 123</p>
-              <p>7호선 가산디지털단지역 8번 출구</p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <ul id="bottom-menu">
-          <li><a href="#">カフェ紹介</a></li>
-          <li><a href="#">個人情報</a></li>
-          <li><a href="#">利用</a></li>
-          <li><a href="#">マップ</a></li>
+    <!-- resume -->
+    <header>
+      <!-- <img id="mtpic" src="images/스크린샷 2025-10-01 오전 10.49.29.png" alt="mountains"> -->
+      <h1>Resume</h1>
+    </header>
+    <section id="profile">
+      <img id="idpic" src="images/스크린샷 2025-10-01 오전 10.40.28.png" alt="신분증사진" />
+      <div>
+        <ul>
+          <li><strong>名前:</strong> 鄭智允</li>
+          <li><strong>生年月日:</strong> 1999.05.06</li>
+          <li><strong>E-mail:</strong> aaa@aaa.com</li>
+          <li><strong>現住所:</strong> ソウル特別市 00区 00ギル</li>
         </ul>
-      </footer>
-    </div>
+      </div>
+    </section>
+    <section id="education">
+      <h3>学歴事項</h3>
+      <ul>
+        <li>00大学 卒業<small>2022.02</small></li>
+        <li>00高校 卒業<small>2018.02</small></li>
+      </ul>
+    </section>
+    <section id="work">
+      <h3>経歴事項</h3>
+      <ul>
+        <li><small>2025.06 ~ 2025.11</small>00会社</li>
+        <li><small>2023.01 ~ 2023.10</small>00会社</li>
+        <li><small>2022.01 ~ 2022.12</small>000会社</li>
+      </ul>
+    </section>
+    <section id="certificate">
+      <h3>資格事項</h3>
+      <ul>
+        <li>JPT 取得<small>YBM 2025.09</small></li>
+        <li>TOEIC 取得 <small>YBM 2025.02</small></li>
+        <li>電算会計1級 取得 <small>韓国税務士会 2020.10</small></li>
+      </ul>
+    </section>
   </body>
 </html>

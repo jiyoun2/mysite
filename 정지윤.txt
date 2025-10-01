@@ -1,0 +1,38 @@
+1. 깃허브 계정(레포지터리) 주소: https://github.com/jiyoun2/mysite.git
+2. 사이트 도메인 주소: https://jiyoun2.github.io/mysite/
+3. 디지털 시계(자바스크립트 코드): 
+// watch.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h2>디지털 시계</h2>
+        <p id="display"></p>
+    </div>
+
+    <script src="js/watch.js"></script>
+</body>
+</html>
+
+// watch.js
+const display = document.getElementById("display");
+
+// 1초 간격으로 myWatch() 호출
+setInterval(myWatch, 1000);
+
+function myWatch() {
+    const date = new Date(); // 날짜 객체 생성 
+    let time = date.toLocaleTimeString(); // 시간 포맷으로 변환
+    display.textContent = time;
+}
+// 실행 함수
+setInterval(() => {
+    const date = new Date();
+    let time = date.toLocaleTimeString();
+    display.textContent = time;
+},1000)
