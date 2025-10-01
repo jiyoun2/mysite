@@ -10,11 +10,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: aliceblue; */
+  background-color: #eee;
 }
 header h1 {
   margin: 0 auto;
   text-decoration: underline;
+  background-color: #eee;
 }
 /* section - profile */
 #profile {
@@ -74,18 +75,19 @@ header h1 {
   float: right;
 }
 
-/* footer */
-
 /* pc */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1023px) {
   #container {
     width: 1200px;
     margin: 0 auto;
   }
   header {
-    height: 400px;
+    height: 300px;
+    background-color: bisque;
   }
-
+  header h1 {
+    background-color: bisque;
+  }
   #idpic {
     float: left;
     width: 100px;
@@ -93,19 +95,20 @@ header h1 {
 }
 
 /* 태블릿 */
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 767px) {
   #container {
     width: 780px;
     margin: 0 auto;
   }
   header {
-    height: 360px;
+    height: 200px;
+    background-color: #c9c9c9;
   }
-  /* img {
-    height: 300px;
-  } */
+  header h1 {
+    background-color: #c9c9c9;
+  }
   #idpic {
-  float: left;
-  width: 100px;
-}
+    float: left;
+    width: 100px;
+  }
 }
